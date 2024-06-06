@@ -1,0 +1,680 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4b902564ce.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <button class="scroll-top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <div class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="https://standardbkpremium.com/assets/images/logo2.png" alt=""></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse" arial-control="collapse" arial-label="ToggleNavigation"><span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span></button>
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faqs.html" class="nav-link">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="support.html" class="nav-link">Get Support</a>
+                    </li>
+                    <a href="create.html" class="btn btn-sm btn-success">Create New Account</a>
+                    <a href="go-to.html" class="btn btn-sm btn-outline-light">Go to your Account</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-section1">
+                <h5>21 CENTURY <span>AND STILL DIGITAL</span></h5>
+                <h2>FAST AND STABLE BANKING</h2>
+                <p>join over 70,000 users frolm all voer the world satisfied with out services. A place where every one performs transactions with confidence. Even with a history of hefty technological investments and an even larger donations, consumer and investor confidence has never waned.</p>
+                <ul>
+                    <li><i class="fa-regular fa-square-check"></i> Personal banking</li>
+                    <li><i class="fa-regular fa-square-check"></i> Corporate banking</li>
+                    <li><i class="fa-regular fa-square-check"></i> SME banking</li>
+                    <li><i class="fa-regular fa-square-check"></i> Personal loans</li>
+                </ul>
+                <button class="btn btn-md btn-primary">Know More</button>
+            </div>
+            <div class="hero-section2">
+                <h2>EASY AND SECURED DIGITAL BANKING</h2>
+                <p>Standard Premium Banking is the best and secured way of performing transactions to people all over the world. No matter where you are in the world, you can save and transact conveniently and confidently</p>
+                <ul>
+                    <li><i class="fa-regular fa-square-check"></i> Personal banking</li>
+                    <li><i class="fa-regular fa-square-check"></i> Corporate banking</li>
+                    <li><i class="fa-regular fa-square-check"></i> SME banking</li>
+                    <li><i class="fa-regular fa-square-check"></i> Personal loans</li>
+                </ul>
+                <button class="btn btn-md btn-primary">Signup</button>
+                <button class="btn btn-md btn-outline-light">Login</button>
+            </div>
+        </div>
+        <button class="differ one" onclick="togglerAdd()"><i class="fa-solid fa-circle"></i></button>
+        <button class="differ two" onclick="togglerAdd()"><i class="fa-solid fa-circle"></i></button>
+    </section>
+
+    <div class="container" id="position">
+        <div class="row">
+            <div class="col-12 col-lg-3 col-md-6 d-flex gap-3" id="col">
+                <i class="fa-regular fa-square-check"></i>
+                <div class="px-3">
+                    <h6>Personal Banking</h6>
+                    <p>Customer can enjoy the convenience of banking service.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 d-flex gap-3" id="col">
+                <i class="fa-regular fa-square-check"></i>
+                <div class="px-3">
+                    <h6>Corporate Banking</h6>
+                    <p>Get it on PC or Mobile to create, send and receive funds.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 d-flex gap-3" id="col">
+                <i class="fa-regular fa-square-check"></i>
+                <div class="px-3">
+                    <h6>SME Banking</h6>
+                    <p>For availing SME loan it is required to mortgage collateral/security.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-3 col-md-6 d-flex gap-3" id="col">
+                <i class="fa-regular fa-square-check"></i>
+                <div class="px-3">
+                    <h6>Personal Loans</h6>
+                    <p>Standard Premium Bank offers a wide range of loans to suit your needs</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5" id="margins">
+            <div class="col-12 col-lg-6 col-md-12">
+                <img class="change rounded" src="https://standardbkpremium.com/base/img/about-us.jpg" alt="">
+            </div>
+            <div class="col-12 col-lg-6 col-md-12" id="controlling">
+                <h1>About Us</h1>
+                <p class="lining">A few years ago, a small team of people deteimed to transform banking launched a savings app for everyone, that app was the first step toward Standard Premium Bank. Today, we're even more detemined and we've build a Central Bank-licensed, microfinance bank to help you get the best out of your money without overcharging you. Standard Premium Bank includes tools for tracking your spending habits, saving more and making the right money moves. So no matter who you are or where you live, we're here because of you. We know the pain that comes with using a regular bank and we will make things work better for everyone.
+                </p>
+                <div class="buttons">
+                    <button class="btn btn-sm btn-primary" id="adding" onclick="showing()">Read More</button>
+                    <button class="btn btn-sm btn-primary" onclick="nShowing()" id="lessing">Show Less</button>
+                </div>
+                <div class="mission">
+                    <div class="mission-container">
+                        <div class="mission-toggle">
+                            <div class="mission-heading">
+                                <h3>Our Mission</h3>
+                            </div>
+                            <div class="mission-content bg-white">
+                                <p>The goal of Standard Premium Bank is to provide its users a unique, safe and secured platform for transactions in the field of finance and fintech This is why we have used cutting-edge platform with extensive infrastructure intended to make things more convenient for our users.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission-container">
+                        <div class="mission-toggle">
+                            <div class="mission-heading">
+                                <h3>Our Vission</h3>
+                            </div>
+                            <div class="mission-content bg-white one">
+                                <p>We always try to expand our technical capabilities and financial prowess with the help of latest and advanced fintech technologies to facilitate transactions.</p>
+                                <p>Standard Premium Bank envisions to widen our customer reach to people of different races, countries and continents.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-light py-5">
+        <div class="bg-light my-5" id="icon">
+            <div class="container">
+                <div class="top py-5 text-center">
+                    <h2>Why Us?</h2>
+                    <p>Here are some of the many features that define our uniqueness.</p>
+                </div>
+                <div class="row my-5 text-center">
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <i class="fa-solid fa-wallet"></i>
+                        <h5>Multiple Payment Options</h5>
+                        <p>We support multiple payment methods: Visa, MasterCard, bank transfer, cryptocurrency and lots more</p>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <i class="bi bi-globe"></i>
+                        <h5>World Coverage</h5>
+                        <p>We provide services in 80% countries around all the globe located in various continents.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <i class="bi bi-currency-dollar"></i>
+                        <h5>Incredible Transaction Fee</h5>
+                        <p>Our transaction fees and rates are incredibly low for all customers and all market markers</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <i class="fa-solid fa-key"></i>
+                        <h5>Secured Transactions</h5>
+                        <p>Your finance is secured with our advanced technologies that protect you against digital thefts and hacks.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <i class="bi bi-shield-lock"></i>
+                        <h5>Strong Security</h5>
+                        <p>We offer you an unbeatable protection against DDoS attacks with full data encryption for all you transactions.</p>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6">
+                        <i class="bi bi-headset"></i>
+                        <h5>24/7 Support</h5>
+                        <p>Our customer care service is available at all time to attend to you and also offer solutions to all your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="container">
+            <div class="row gy-3 width">
+                <div class="col-12 col-lg-6 col-md-12" id="animation">
+                    <div id="shadow">
+                        <div class="card" id="border">
+                            <h4 class="text-center py-3">personal</h4>
+                            <p class="badge bg-success">Account</p>
+                            <h1 class="text-center py-3">2<span>%</span> <sub>MONTHLY INTEREST</sub></h1>
+                        </div>
+                        <div class="background px-3 py-5">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="text-light" style="font-size: 13px;"><i class="fa-regular fa-square-check"></i> Minimum amount</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-light" style="font-size: 13px;">USD 1,000</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="text-light" style="font-size: 13px;"><i class="fa-regular fa-square-check"></i> Interval Type</p>    
+                                </div>
+                                <div>
+                                    <h5 class="text-light" style="font-size: 13px;">Partial</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="text-light" style="font-size: 13px;"><i class="fa-regular fa-square-check"></i> Get Interest every</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-light" style="font-size: 13px;">30 Days</h5>
+                                </div>
+                            </div>
+                            <div class="text-center" id="button">
+                                <button class="btn btn-md btn-outline-light my-2">Get Started Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-12">
+                    <div id="shadow">
+
+                        <div class="card" id="border">
+                            <h4 class="text-center py-3">Corporate</h4>
+                            <p class="badge bg-success">Account</p>
+                            <h1 class="text-center py-3">3<span>%</span> <sub>MONTHLY INTEREST</sub></h1>
+                        </div>
+                        <div class="background px-3 py-5">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="text-light" style="font-size: 13px;"><i class="fa-regular fa-square-check"></i> Minimum amount</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-light" style="font-size: 13px;">USD 10,000</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="text-light" style="font-size: 13px;"><i class="fa-regular fa-square-check"></i> Interval Type</p>    
+                                </div>
+                                <div>
+                                    <h5 class="text-light" style="font-size: 13px;">Fixed</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="text-light" style="font-size: 13px;"><i class="fa-regular fa-square-check"></i> Get Interest every</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-light" style="font-size: 13px;">30 Days</h5>
+                                </div>
+                            </div>
+                            <div class="text-center" id="button">
+                                <button class="btn btn-md btn-outline-light my-2">Get Started Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="summary">
+        <div class="container text-center text-light py-5 mb-5">
+            <h1>A Summary of Our Jouney</h1>
+            <p>We have over the years gannered oads of experiences that has consequently boosted our portfolio in world financial services.</p>
+            <div class="row gy-2">
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card p-3">
+                        <i class="fa-regular fa-user"></i>
+                        <h1>62550</h1>
+                        <p>Active Users</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card p-3">
+                        <i class="fa-regular fa-clock"></i>
+                        <h1>2950</h1>
+                        <p>Running Days</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card p-3">
+                        <i class="bi bi-trophy"></i>
+                        <h1>375</h1>
+                        <p>Won Award</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="card p-3">
+                        <i class="bi bi-globe"></i>
+                        <h1>200</h1>
+                        <p>Global Presence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row align-items-center g-5" id="font-change">
+            <div class="col-12 col-lg-6 col-md-12">
+                <h1>A brief history about us</h1>
+                <p>Our Company, "Standard Premium Bank", was founded in 2012 by a group of socially-minded entrepreneurs who saw the need for accessible financial services for low-income individuals and small business. They believed that by providing small loans and other financial services to these underbanked populations, they could help to promote economic growth and reduce povverty in teh community.
+                </p>
+                <p>In the early days, Standard Premium Bank focused on providing small loans to micro-entreprenuers in their local area. They quickly realized that there was a high demand for their services and decided to expand their operations by opening new branches in other cities. 
+                </p>
+                <p>As the company grew, they started to offer a wider range of financial services, such as savings accounts, insurance, and money transfers. The also began to develop innovative new products, such as mobile banking services, to make it easier for their customers to access their services. 
+                </p>
+                <p>In 2013, Standard Premium Bank received an investment from a major venture capital firm, which allowed them to scale up their operations and expand into new markets. By 2015, Standard Premium Bank had become one fo the largest microfinance companies in the country, serving thousands of customers and providing millions of dolars in loans and other financial services.</p>
+                <p>Throughout its history, Standard Premium Bank has always been guided by its mission to empower the underbank and promote economic growth.</p>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12 d-flex align-items-center justify-content-center hovering">
+                <img src="https://standardbkpremium.com/base/img/about-1.jpg" alt="" style="width: 100%;">
+                <a href="#"><i class="bi bi-play"></i></a>
+                <div class="history">
+                    <div class="circle-container">
+                        <div class="circle one1"></div>
+                        <div class="circle two2"></div>
+                        <div class="circle three3"></div>
+                        <div class="circle four4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="process bg-light">
+        <div class="container text-center">
+            <h1 class="pt-5 pb-3">Our Process is Simple and Short</h1>
+            <div class="row gy-5">
+                <div class="col-12 col-lg-3 col-md-6" id="our-p">
+                    <div class="d-flex justify-content-center align-item-center" id="simple">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h6>Sign up</h6>
+                    <p>Click on the registration button to register, verify yourself and get a new account in minutes</p>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6" id="our-p">
+                    <div class="d-flex justify-content-center align-item-center" id="simple">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <h6>Set Up Your Account</h6>
+                    <p>Login to your account to add a new wallet and get your unique account number and transaction pin.</p>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6" id="our-p">
+                    <div class="d-flex justify-content-center align-item-center" id="simple">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+                    <h6>Fund your Account</h6>
+                    <p>Make deposit to your account to perform transactions and access our various services. Enjoy a secure payments system that protects your money and data from fraud as you grow revenue.</p>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6" id="our-p">
+                    <div class="d-flex justify-content-center align-item-center" id="simple">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <h6>Perform transactions</h6>
+                    <p>Explore our seamless services by performing various transactions on your account.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5 my-5">
+            <h1 class="py-5 mt-5">Our Banking Sectors</h1>
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card shadow" id="banking">
+                        <div class="image-after con1">
+                            <img class="card-img-top" src="https://standardbkpremium.com/base/img/serv/forex.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card shadow" id="banking">
+                        <div class="image-after con2">
+                            <img class="card-img-top" src="https://standardbkpremium.com/base/img/serv/agric.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card shadow" id="banking">
+                        <div class="image-after con3">
+                            <img class="card-img-top" src="https://standardbkpremium.com/base/img/serv/oil.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <div class="container">
+        <h1 class="text-center">What Our Clients Say About Us</h1>
+        <div class="text-center">
+            <small class="text-secondary">Our expertise in financial services has bettered the lives of our clients greatly, their testimony <br>encouraged us greatly.</small>
+        </div>
+        <div class="row my-5">
+            <div class="col-12 col-lg-4 col-md-6">
+                <div class="card bg-light border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <small class="card-text text-secondary fw-light">
+                            Standard Premium Bank is one of the best performing microfinance company i have ever experienced. Their transaction process are incredibly seamless!
+                        </small>
+                        <div class="d-flex align-items-center gap-3 mt-3">
+                            <img src="https://standardbkpremium.com/base/img/avatars/3.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
+                            <div>
+                                <h6>Chloe Neil</h6>
+                                <small class="text-secondary">Customer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+                <div class="card bg-light border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <small class="card-text text-secondary fw-light">
+                            Great company With great vision. Their customer service is quite impressive. Their transaction fees is incredibly low which is also amazing.
+                        </small>
+                        <div class="d-flex align-items-center gap-3 mt-3">
+                            <img src="https://standardbkpremium.com/base/img/avatars/2.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
+                            <div>
+                                <h6>Kim Thompson</h6>
+                                <small class="text-secondary">Customer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+                <div class="card bg-light border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <small class="card-text text-secondary fw-light">
+                            Thi sis just awesome! One of the best service I had. You can trust them and deposit your funds. Their loands are really helpful and convenient too
+                        </small>
+                        <div class="d-flex align-items-center gap-3 mt-3">
+                            <img src="https://standardbkpremium.com/base/img/avatars/4.jpg" alt="" style="max-width: 50px; border-radius: 50%;">
+                            <div>
+                                <h6>Kyle Waters</h6>
+                                <small class="text-secondary">Customer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-5 py-5">
+            <h1>Frequently Asked Questions</h1>
+            <small class="text-secondary">Have Any Question?</small>
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-12 border-1">
+                    <div class="accordion accordion-flush border" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div class="d-flex">
+                                    <i class="bi bi-card-heading me-2"></i> 
+                                    <h6 class="text-secondary fw-normal">What is Standard Premium Bank</h6>
+                                </div>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <small style="font-size: 15px;" class="accordion-body d-block text-secondary">Standard Premium Bank our company provides a full investment service focused on the bitcoin and cryptocurrency market We are among the best platforms to invest and grow your bitcoin and other cryptocurrency</small>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              <div class="d-flex">
+                                <i class="bi bi-card-heading me-2"></i>
+                                <h6 class="text-secondary fw-normal">What is Bank Account?</h6>
+                              </div>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <small class="accordion-body d-block text-secondary">A bank account is a financial account maintained by a bank or other financial institutio in which the financial transactions between the bank and a customer are recorded.</small>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <div class="d-flex">
+                                    <i class="bi bi-card-heading me-2"></i>
+                                    <h6 class="text-secondary fw-normal">How do i create my account?</h6>
+                                  </div>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <small class="accordion-body d-block text-secondary">Registration process is very easy and will take a few moments to complete Simple click CREATE ACCOUNT button and fill in all the required fields</small>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                  <div class="d-flex">
+                                      <i class="bi bi-card-heading me-2"></i>
+                                      <h6 class="text-secondary fw-normal">how do i make a deposit?</h6>
+                                    </div>
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                              <small class="accordion-body d-block text-secondary">To deposit funds in your trading account is quick and simple For your convenience you may choose one of the several available deposit methods to make a successful deposit please follow the steps below login to your account Click on the DEPOSITS button in the DASHBOARD section Choose the deposit option And follow the steps to complete your transaction</small>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    <div class="d-flex">
+                                      <i class="bi bi-card-heading me-2"></i>
+                                      <h6 class="text-secondary fw-normal">How long does my deposit take before it can reflect my Standard Premium Bank account dashboard?</h6>
+                                    </div>
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                              <small class="accordion-body d-block text-secondary">Your deposit will be reflected immediately once it is confirmed on the blockchain network</small>
+                            </div>
+                          </div>
+                      </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-12 border-1">
+                    <div class="accordion accordion-flush border" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne1">
+                            <button class="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
+                                <div class="d-flex">
+                                    <i class="bi bi-card-heading me-2"></i>
+                                    <h6 class="text-secondary fw-normal">What Are The Requirements For Business Loan?</h6>
+                                </div>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne1" data-bs-parent="#accordionFlushExample">
+                            <small class="accordion-body d-block text-secondary">If you received a Paycheck Protection Program (PPP) loan, loan forgiveness isn't automatic. YOu need to apply if you want your loan forgiven. You may need to include bank account statements on your PPP forgiveness application. <br>
+                                Lenders want to proof of your business's incoming money. As a result, you may have to show your bank statements to the lender when you apply for a business loan. The lender reviews the statements to determine if you are a good fit for a loan.
+                            </small>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo2" aria-expanded="false" aria-controls="flush-collapseTwo2">
+                                <div class="d-flex">
+                                    <i class="bi bi-card-heading me-2"></i>
+                                    <h6 class="text-secondary fw-normal">How long does it take to process a withdrawal to an international bank?</h6>
+                                  </div>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo2" data-bs-parent="#accordionFlushExample">
+                            <small class="accordion-body text-secondary d-block">Once we receive your withdrawal request we process immediately and send to your Bank Account</small>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                <div class="d-flex">
+                                    <i class="bi bi-card-heading me-2"></i>
+                                    <h6 class="text-secondary fw-normal">Can i have more than two accounts</h6>
+                                  </div>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                            <small class="accordion-body text-secondary d-block">We do not allow multiple accounts except only for business purposes</small>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-12 col-lg-6 col-md-12">
+                <div class="card border-0 p-4 bg-light">
+                    <h2>Ready to get started?</h2>
+                    <form>
+                        <input type="text" placeholder="Enter Name *"> <br> <br>
+                        <input type="email" placeholder="Enter Email *"><br><br>
+                        <input type="text" placeholder="Enter Subject"><br><br>
+                        <textarea rows="6" placeholder="Message"></textarea>
+                    </form>
+                    <div class="my-3">
+                        <button class="btn btn-sm btn-primary py-2 px-5">Send Message</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12">
+                <h2>Looking for an easy and secured place to save your money?</h2>
+                <small>Search no more! Click on the button below to get started</small> <br> <br>
+                <button class="btn btn-sm hover mb-5">Get Your Solution <i class="bi bi-arrow-right-short"></i></button>
+                <hr>
+
+                <h5>Our Headerquarters</h5>
+                <small class="text-secondary">Tokyo Japan</small><br><br>
+                <small class="text-secondary">Email: <span style="color: darkblue;">support@standardbkpremium.com</span></small>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-light mt-5">
+        <div class="container logos">
+            <div class="logos-slide">
+                <img src="/clients-logo-01.png" alt="">
+                <img src="clients-logo-02.png" alt="">
+                <img src="clients-logo-03.png" alt="">
+                <img src="clients-logo-04.png" alt="">
+                <img src="clients-logo-05.png" alt="">
+                <img src="clients-logo-06.png" alt="">
+                <img src="clients-logo-07.png" alt="">
+                <img src="clients-logo-08.png" alt="">
+            </div>
+            <div class="logos-slide">
+                <img src="clients-logo-01.png" alt="">
+                <img src="clients-logo-02.png" alt="">
+                <img src="clients-logo-03.png" alt="">
+                <img src="clients-logo-04.png" alt="">
+                <img src="clients-logo-05.png" alt="">
+                <img src="clients-logo-06.png" alt="">
+                <img src="clients-logo-07.png" alt="">
+                <img src="clients-logo-08.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer class="mb-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <ul class="col-12 col-lg-2 col-md-3">
+                    <li><h6>QUICK LINKS</h6></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+                <ul class="col-12 col-lg-2 col-md-3">
+                    <li><h6>COMPANY</h6></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+                <ul class="col-12 col-lg-2 col-md-3">
+                    <li><h6>LEGAL</h6></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+                <ul class="col-12 col-lg-2 col-md-3">
+                    <li><h6>SUPPORT</h6></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">System Status</a></li>
+                </ul>
+                <ul class="col-12 col-lg-3 col-md-3">
+                    <li><h6>GET IN TOUCH</h6></li>
+                    <li><a href="#"><i class="bi bi-geo-alt-fill"></i> South Africa</a></li>
+                    <li><a href="#"><i class="bi bi-envelope"></i> support@standardbkpremium.com</a></li>
+                    <li><a href="#" class="link"><i class="bi bi-chat"></i> +27788544881</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid bg-light py-3">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-12 col-lg-6 col-md-4">
+                        <small class="text-secondary">Copyright © 2024, All rights reserved <a href="#" class="text-decoration-none">standardbkpremium.com</a>
+                        </small>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-4 d-flex justify-content-end align-item-center">
+                        <a href="#"><i class="bi bi-facebook mx-3"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x mx-3"></i></a>
+                        <a href="#"><i class="bi bi-linkedin mx-3"></i></a>
+                        <a href="#"><i class="bi bi-instagram mx-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

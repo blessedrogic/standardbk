@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+img{
+    width: 100%;
+}
+
+.scroll-top-btn{
+    padding: 18px 20px;
+    border-radius: 50%;
+    border: none;
+    border: 3px solid lightblue;
+    box-shadow: 2em 2em 5em 1em lightblue;
+    background: black;
+    position: fixed;
+    z-index: 1;
+    bottom: 50px;
+    right: 50px;
+    transform: translateY(-700px);
+    opacity: 0;
+    scale: .8;
+    transition: transform 1s ease-in-out, 
+    opacity 1s ease-in-out, 
+    scale 1s ease-in-out;
+}
+
+.scroll-top-btn:hover{
+    scale: .9;
+}
+
+.scroll-top-btn::before{
+    content: '';
+    width: 100%; 
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: -1;
+    transform: perspective(5em) rotateX(80deg);
+    filter: blur(25px);
+    scale: .5;
+    transition: scale 1s ease-in-out;
+}
+
+.scroll-top-btn:hover::before{
+    scale: .9;
+}
+
+.scroll-top-btn i{
+    font-size: 20px;
+    color: white;
+}
+
+.scroll{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-changer{
+    background: linear-gradient(to right, rgb(190, 238, 253), rgb(0, 132, 255));    
+}
+
+.navbar a{
+    color: lightgrey;
+}
+
+.navbar .navbar-collapse ul li{
+    position: relative;
+    margin: 0 5px;
+}
+
+.navbar .navbar-collapse ul li::before{
+    content: '';
+    width: 100%; 
+    height: 2px;
+    background: darkblue;
+    position: absolute;
+    bottom: 10px;
+    opacity: .3;
+    left: 0;
+    transform: scale(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+}
+
+.navbar .navbar-collapse ul li:hover::before{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+.navbar a:hover{
+    color: white;
+}
+.navbar .navbar-collapse ul li:nth-child(1) a{
+    position: relative;
+    transition: opacity all 0.5s ease-in-out;
+}
+
+.navbar .navbar-collapse ul li:nth-child(1) a::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: black;
+    left: 0; 
+    bottom: 0;
+    transform: scale(0);
+    transform-origin: right;
+    filter: blur(2px);
+    transition: transform 0.5s ease-in-out;
+    opacity: .5;
+}
+
+.navbar .navbar-collapse ul li:nth-child(1) a:hover::before,
+.navbar .navbar-collapse ul li:nth-child(1) a:focus::before{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+.navbar .navbar-collapse ul li:nth-child(1) a::after{
+    content: 'Home';
+    position: absolute;
+    left: 8px;
+    bottom: -5px;
+    color: black;
+    transform: perspective(0em) rotateX(0deg);
+    filter: blur(2px);
+    opacity: 0;
+}
+
+.navbar .navbar-collapse ul li:nth-child(1) a:hover::after,
+.navbar .navbar-collapse ul li:nth-child(1) a:focus::after{
+    transform: perspective(3em) rotateX(40deg);
+    opacity: 1;
+}
+
+.navbar .navbar-collapse ul li:nth-child(2) a{
+    position: relative;
+    transition: opacity all 0.5s ease-in-out;
+}
+
+.navbar .navbar-collapse ul li:nth-child(2) a::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: black;
+    left: 0; 
+    bottom: 0;
+    transform: scale(0);
+    transform-origin: right;
+    filter: blur(2px);
+    transition: transform 0.5s ease-in-out;
+    opacity: .5;
+}
+
+.navbar .navbar-collapse ul li:nth-child(2) a:hover::before,
+.navbar .navbar-collapse ul li:nth-child(2) a:focus::before{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+.navbar .navbar-collapse ul li:nth-child(2) a::after{
+    content: 'About Us';
+    position: absolute;
+    left: 8px;
+    bottom: -5px;
+    color: black;
+    transform: perspective(0em) rotateX(0deg);
+    filter: blur(2px);
+    opacity: 0;
+}
+
+.navbar .navbar-collapse ul li:nth-child(2) a:hover::after,
+.navbar .navbar-collapse ul li:nth-child(2) a:focus::after{
+    transform: perspective(3em) rotateX(40deg);
+    opacity: 1;
+}
+
+.navbar .navbar-collapse ul li:nth-child(3) a{
+    position: relative;
+    transition: opacity all 0.5s ease-in-out;
+}
+
+.navbar .navbar-collapse ul li:nth-child(3) a::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: black;
+    left: 0; 
+    bottom: 0;
+    transform: scale(0);
+    transform-origin: right;
+    filter: blur(2px);
+    transition: transform 0.5s ease-in-out;
+    opacity: .5;
+}
+
+.navbar .navbar-collapse ul li:nth-child(3) a:hover::before,
+.navbar .navbar-collapse ul li:nth-child(3) a:focus::before{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+.navbar .navbar-collapse ul li:nth-child(3) a::after{
+    content: 'Services';
+    position: absolute;
+    left: 8px;
+    bottom: -5px;
+    color: black;
+    transform: perspective(0em) rotateX(0deg);
+    filter: blur(2px);
+    opacity: 0;
+}
+
+.navbar .navbar-collapse ul li:nth-child(3) a:hover::after,
+.navbar .navbar-collapse ul li:nth-child(3) a:focus::after{
+    transform: perspective(3em) rotateX(40deg);
+    opacity: 1;
+}
+
+.navbar .navbar-collapse ul li:nth-child(4) a{
+    position: relative;
+    transition: opacity all 0.5s ease-in-out;
+}
+
+.navbar .navbar-collapse ul li:nth-child(4) a::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: black;
+    left: 0; 
+    bottom: 0;
+    transform: scale(0);
+    transform-origin: right;
+    filter: blur(2px);
+    transition: transform 0.5s ease-in-out;
+    opacity: .5;
+}
+
+.navbar .navbar-collapse ul li:nth-child(4) a:hover::before,
+.navbar .navbar-collapse ul li:nth-child(4) a:focus::before{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+.navbar .navbar-collapse ul li:nth-child(4) a::after{
+    content: 'FAQs';
+    position: absolute;
+    left: 8px;
+    bottom: -5px;
+    color: black;
+    transform: perspective(0em) rotateX(0deg);
+    filter: blur(2px);
+    opacity: 0;
+}
+
+.navbar .navbar-collapse ul li:nth-child(4) a:hover::after,
+.navbar .navbar-collapse ul li:nth-child(4) a:focus::after{
+    transform: perspective(3em) rotateX(40deg);
+    opacity: 1;
+}
+
+.navbar .navbar-collapse ul li:nth-child(5) a{
+    position: relative;
+    transition: opacity all 0.5s ease-in-out;
+}
+
+.navbar .navbar-collapse ul li:nth-child(5) a::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: black;
+    left: 0; 
+    bottom: 0;
+    transform: scale(0);
+    transform-origin: right;
+    filter: blur(2px);
+    transition: transform 0.5s ease-in-out;
+    opacity: .5;
+}
+
+.navbar .navbar-collapse ul li:nth-child(5) a:hover::before,
+.navbar .navbar-collapse ul li:nth-child(5) a:focus::before{
+    transform: scale(1);
+    transform-origin: left;
+}
+
+.navbar .navbar-collapse ul li:nth-child(5) a::after{
+    content: 'Get Support';
+    position: absolute;
+    left: 8px;
+    bottom: -5px;
+    color: black;
+    transform: perspective(0em) rotateX(0deg);
+    filter: blur(2px);
+    opacity: 0;
+}
+
+.navbar .navbar-collapse ul li:nth-child(5) a:hover::after,
+.navbar .navbar-collapse ul li:nth-child(5) a:focus::after{
+    transform: perspective(3em) rotateX(40deg);
+    opacity: 1;
+}
+
+.navbar .navbar-brand{
+    width: 10%;
+}
+
+.navbar img{
+    width: 100%;
+}
+
+.navbar ul button{
+    margin-right: 10px;
+}
+
+.navbar .navbar-toggler span i{
+    font-size: 20px;
+    color: white;
+}
+
+.navbar .navbar-toggler span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.hero{
+    background: linear-gradient(to right, rgb(9, 3, 85), rgb(0, 47, 255));
+    max-height: 100%;
+    min-height: 400px;
+}
+
+#banking .image-after{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.con1::after{
+    content: 'Stocks';
+    position: absolute;
+    color: white;
+    z-index: 1;
+    bottom: 20px;
+    left: 0;
+    font-size: 12px;
+    font-weight: 200;
+    width: 80px;
+    height: 30px;
+    background: rgb(0, 0, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con2::after{
+    content: 'Agriculture';
+    position: absolute;
+    color: white;
+    z-index: 1;
+    bottom: 20px;
+    left: 0;
+    font-size: 12px;
+    font-weight: 200;
+    width: 100px;
+    height: 30px;
+    background: rgb(0, 0, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con3::after{
+    content: 'Oil And Gas';
+    position: absolute;
+    color: white;
+    z-index: 1;
+    bottom: 20px;
+    left: 0;
+    font-size: 12px;
+    font-weight: 200;
+    width: 80px;
+    height: 30px;
+    background: rgb(0, 0, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banking .con1:hover::after{
+    background: rgb(0, 0, 230);
+}
+
+#banking .con2:hover::after{
+    background: rgb(0, 0, 230);
+}
+
+#banking .con3:hover::after{
+    background: rgb(0, 0, 230);
+}
+
+.con4::after{
+    content: 'Real Estate';
+    position: absolute;
+    color: white;
+    z-index: 1;
+    bottom: 20px;
+    left: 0;
+    font-size: 12px;
+    font-weight: 200;
+    width: 80px;
+    height: 30px;
+    background: rgb(0, 0, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con5::after{
+    content: 'Retirement and Insurance Services';
+    position: absolute;
+    color: white;
+    z-index: 1;
+    bottom: 20px;
+    left: 0;
+    font-size: 12px;
+    font-weight: 200;
+    width: 250px;
+    height: 30px;
+    background: rgb(0, 0, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con6::after{
+    content: 'Gold';
+    position: absolute;
+    color: white;
+    z-index: 1;
+    bottom: 20px;
+    left: 0;
+    font-size: 12px;
+    font-weight: 200;
+    width: 80px;
+    height: 30px;
+    background: rgb(0, 0, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banking .con4:hover::after{
+    background: rgb(0, 0, 230);
+}
+
+#banking .con5:hover::after{
+    background: rgb(0, 0, 230);
+}
+
+#banking .con6:hover::after{
+    background: rgb(0, 0, 230);
+}
+
+.logos{
+    overflow: hidden;
+    white-space: nowrap;
+    height: 80px;
+}
+
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+
+.logos-slide{
+    display: inline-block;
+    animation: scroll-animation 25s linear infinite;
+    align-items: center;
+    height: 80%;
+    padding-top: 20px;
+}
+
+.logos-slide img{
+    width: 100px;
+    height: 40px;
+    margin-inline: 40px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.logos-slide img:hover{
+    scale: 1.2;
+}
+
+@keyframes scroll-animation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+
+
+}
+
+footer{
+    background: linear-gradient(to right, rgb(1, 1, 143), rgb(0, 140, 255));
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li h6{
+    color: white;
+    margin-bottom: 15px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 12px;
+}
+
+footer ul li a:hover{
+    color: white;
+}
+
+@media (max-width: 871px) {
+    .navbar{
+        background: linear-gradient(to right, rgb(0, 132, 255), rgb(190, 238, 253));    
+    }
+}
